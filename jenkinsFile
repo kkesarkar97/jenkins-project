@@ -6,13 +6,19 @@ pipeline {
 
                 stages ("Build"){
                     steps {
-                        echo 'This the Build stage'
+                        echo 'Building of Application..'
                     }
                 }
                 
                 stages ("Test") {
                     steps {
-                        echo 'This is Test Stage'
+                        echo 'Testing of Application..'
+                        }
+                     }
+                     
+                  tages ("deplo")
+                    steps {
+                        echo 'Deploying of Apllication..'
                         }
                      }
             }
